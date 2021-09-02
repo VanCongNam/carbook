@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Carbook - Free Bootstrap 4 Template by Colorlib</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- or the reference on CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- themify icon -->
+  <link rel="stylesheet" href="css/css/themify-icons.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/partner.css">
+  <link rel="stylesheet" href="css/loader.css">
+</head>
+
+<body>
+<!-- Loader Start -->
+<!-- <div id="loader" class="loader">
+  <svg class="car" width="102" height="40" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(2 1)" stroke="#002742" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+      <path class="car__body" d="M47.293 2.375C52.927.792 54.017.805 54.017.805c2.613-.445 6.838-.337 9.42.237l8.381 1.863c2.59.576 6.164 2.606 7.98 4.531l6.348 6.732 6.245 1.877c3.098.508 5.609 3.431 5.609 6.507v4.206c0 .29-2.536 4.189-5.687 4.189H36.808c-2.655 0-4.34-2.1-3.688-4.67 0 0 3.71-19.944 14.173-23.902zM36.5 15.5h54.01" stroke-width="3"/>
+      <ellipse class="car__wheel--left" stroke-width="3.2" fill="#FFF" cx="83.493" cy="30.25" rx="6.922" ry="6.808"/>
+      <ellipse class="car__wheel--right" stroke-width="3.2" fill="#FFF" cx="46.511" cy="30.25" rx="6.922" ry="6.808"/>
+      <path class="car__line car__line--top" d="M22.5 16.5H2.475" stroke-width="3"/>
+      <path class="car__line car__line--middle" d="M20.5 23.5H.4755" stroke-width="3"/>
+      <path class="car__line car__line--bottom" d="M25.5 9.5h-19" stroke-width="3"/>
+    </g>
+  </svg>
+</div> -->
+<!-- Loader End -->
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Car<span>Book</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <!-- <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li> -->
+          <li class="nav-item"><a href="car.html" class="nav-link">Cars</a></li>
+          <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item dropdown">
+            <a class="dropdown-toggle nav-link" href="#" role="button" id="language"> English</a>
+            <div class="dropdown-menu" aria-labelledby="language">
+              <a class="dropdown-item"
+                onclick="doGTranslate('en|en');document.querySelector('#language').textContent='English'" href="#">
+                <span class="flag-icon flag-icon-us"></span> English</a>
+              <a class="dropdown-item"
+                onclick="doGTranslate('en|ja');document.querySelector('#language').textContent='Japan'" href="#"><span
+                  class="flag-icon flag-icon-jp"></span> Japanese</a>
+              <a class="dropdown-item"
+                onclick="doGTranslate('en|vi');document.querySelector('#language').textContent='Việt Nam'"
+                href="#"><span class="flag-icon flag-icon-vn"></span> Vietnamese</a>
+              <a class="dropdown-item"
+                onclick="doGTranslate('en|zh-CN');document.querySelector('#language').textContent='Chinese'"
+                href="#"><span class="flag-icon flag-icon-cn"></span> Chinese</a>
+            </div>
+            <div id="google_translate_element2"></div>
+          </li>
+          <li class="nav-item">
+            <a href="car-single.html" style="margin-top: 2px;" class="nav-link btn btn-outline-white">Sign In</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+  <div class="hero-wrap ftco-degree-bg" style="background-image: url('images/bg_1.jpg');"
+    data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text justify-content-start align-items-center justify-content-center">
+        <div class="col-lg-8 ftco-animate">
+          <div class="text w-100 text-center mb-md-5 pb-md-5">
+            <h1 class="mb-4">Fast &amp; Easy Way To Rent A Car</h1>
+            <p style="font-size: 18px;">A small river named Duden flows by their place and supplies it with the
+              necessary regelialia. It is a paradisematic country, in which roasted parts</p>
+            <a href="https://vimeo.com/45830194"
+              class="icon-wrap popup-vimeo d-flex align-items-center mt-4 justify-content-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="ion-ios-play"></span>
+              </div>
+              <div class="heading-title ml-5">
+                <span>Easy steps for renting a car</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Booking Start-->
+  <section class="ftco-section ftco-no-pt bg-light">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-md-12	featured-top">
+          <div class="row no-gutters">
+            <div class="col-md-6 d-flex align-items-center">
+              <form action="payment.html" class="request-form ftco-animate bg-primary">
+                <h2>Make your trip</h2>
+                <div class="form-group">
+                  <label for="" class="label">Pick-up location</label>
+                  <input type="text" class="form-control" placeholder="City, Airport, Station, etc">
+                </div>
+                <div class="form-group">
+                  <label for="" class="label">Drop-off location</label>
+                  <input type="text" class="form-control" placeholder="City, Airport, Station, etc">
+                </div>
+                <div class="d-flex">
+                  <div class="form-group mr-2">
+                    <label for="" class="label">Pick-up date</label>
+                    <input type="text" class="form-control" id="book_pick_date" placeholder="Date">
+                  </div>
+                  <div class="form-group ml-2">
+                    <label for="" class="label">Pick-up time</label>
+                    <input type="text" class="form-control" id="time_pick" placeholder="Time">
+                  </div>
+                </div>
+                <div class="d-flex">
+                    <div class="form-group mr-2">
+                        <label for="" class="label">Drop-off date</label>
+                        <input type="text" class="form-control" id="book_off_date" placeholder="Date">
+                    </div>
+                    <div class="form-group ml-2">
+                        <label for="" class="label">Drop-off time</label>
+                        <input type="text" class="form-control" id="time_drop" placeholder="Time">
+                       
+                    </div>
+                  </div>
+                <div class="form-group">
+                  <input type="submit" value="Rent A Car Now" class="btn btn-secondary py-3 px-4">
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+              <div class="services-wrap rounded-right w-100">
+                <h3 class="heading-section mb-4">Better Way to Rent Your Perfect Cars</h3>
+                <div class="row d-flex mb-4">
+                  <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                    <div class="services w-100 text-center">
+                      <div class="icon d-flex align-items-center justify-content-center"><span
+                          class="flaticon-route"></span></div>
+                      <div class="text w-100">
+                        <h3 class="heading mb-2">Choose Your Pickup Location</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                    <div class="services w-100 text-center">
+                      <div class="icon d-flex align-items-center justify-content-center"><span
+                          class="flaticon-handshake"></span></div>
+                      <div class="text w-100">
+                        <h3 class="heading mb-2">Select the Best Deal</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                    <div class="services w-100 text-center">
+                      <div class="icon d-flex align-items-center justify-content-center"><span
+                          class="flaticon-rent"></span></div>
+                      <div class="text w-100">
+                        <h3 class="heading mb-2">Reserve Your Rental Car</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <p><a href="#" class="btn btn-primary py-3 px-4">Reserve Your Perfect Car</a></p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Booking End -->
+
+  <!-- Feature Start -->
+  <section class="ftco-section testimony-section bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-7 text-center heading-section ftco-animate">
+          <!-- <span class="subheading">Testimonial</span> -->
+          <h2 class="mb-3">Testimonial</h2>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ab voluptatum laudantium sit dicta. Quos
+            expedita magni facere officiis.</p> -->
+        </div>
+      </div>
+      <div class="row ftco-animate">
+        <div class="col-md-12">
+          <div class="carousel-testimony owl-carousel ftco-owl">
+            <div class="item">
+              <div class="text-center">
+                <div class="text pt-4">
+                  <img src="images/features-2.b132c16e.jpg" class="img-fluid" style="border-radius: 10px;" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="rounded text-center">
+                <div class="text pt-4">
+                  <img src="images/features-3.df3f531c.jpg" class="img-fluid" style="border-radius: 10px;" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="rounded text-center">
+                <div class="text pt-4">
+                  <img src="images/features-5.6d62e376.jpg" class="img-fluid" style="border-radius: 10px;" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="rounded text-center">
+                <div class="text pt-4">
+                  <img src="images/features-6.683ce1e0.jpg" class="img-fluid" style="border-radius: 10px;" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Feature End -->
+
+  <!-- About Start -->
+  <section class="ftco-section ftco-about">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center"
+          style="background-image: url(images/about.jpg);border-radius: 5px;">
+        </div>
+        <div class="col-md-6 wrap-about ftco-animate">
+          <div class="heading-section heading-section-white pl-md-5">
+            <span class="subheading">About us</span>
+            <h2 class="mb-4">Welcome to Carbook</h2>
+
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+              paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have
+              been rewritten a thousand times and everything that was left from its origin would be the word "and"</p>
+            <p><a href="#" class="btn btn-light py-3 px-4">Search Vehicle</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About End -->
+
+
+
+  <!-- Location Start-->
+  <section class="ftco-section testimony-section bg-light" id="location">
+    <div class="container"> 
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-7 text-center heading-section ftco-animate">
+          <span class="subheading">Booking</span>
+          <h2 class="mb-3">Location</h2>
+        </div>
+      </div>
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li style="background: url(./images/ha-tien.jpg) no-repeat center;" class="splide__slide snip0019"> <a href="">
+              <figcaption>
+                <div><h2></h2></div>
+                <div><p>Hà Tiên</p></div>
+                <a href="#"></a>
+              </figcaption>
+              </a> </li>
+            <li style="background: url(./images/hue.jpg) no-repeat center;" class="splide__slide snip0019"> <a href="">
+              <figcaption>
+                <div><h2></h2></div>
+                <div><p>Huế</p></div>
+                <a href="#"></a>
+              </figcaption>
+              </a> </li>
+            <li style="background: url(./images/nha-trang.jpg) no-repeat center;" class="splide__slide snip0019"> <a href="">
+              <figcaption>
+                <div><h2></h2></div>
+                <div><p>Nha Trang</p></div>
+                <a href="#"></a>
+              </figcaption>
+              </a></li>
+            <li style="background: url(./images/vinh-Ha-Long.jpg) no-repeat center;" class="splide__slide snip0019"> <a href="">
+              <figcaption>
+                <div><h2></h2></div>
+                <div><p>Vịnh Hạ Long</p></div>
+                <a href="#"></a>
+              </figcaption>
+              </a> </li>
+            <li style="background: url(./images/khanh-hoa.jpg) no-repeat center;" class="splide__slide snip0019"> <a href="">
+              <figcaption>
+                <div><h2></h2></div>
+                <div><p>Khánh Hòa</p></div>
+                <a href="#"></a>
+              </figcaption>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Location End-->
+
+  <!-- Book car Start -->
+  <section class="ftco-section ftco-no-pt bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+          <span class="subheading">What we offer</span>
+          <h2 class="mb-2">Feeatured Vehicles</h2>
+          <p>
+          <h3><b>Self-driving car</b></h3>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="carousel-car owl-carousel">
+            <div class="item">
+              <div class="car-wrap rounded ftco-animate">
+                <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-1.jpg);">
+                </div>
+                <div class="text">
+                  <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
+                  <div class="d-flex mb-3">
+                    <span class="cat">Cheverolet</span>
+                    <p class="price ml-auto">$500 <span>/day</span></p>
+                  </div>
+                    <div class="wrapper">
+                      <input name="ratingRadio" type="radio" id="st1" value="1" />
+                      <label for="st1"></label>
+                      <input name="ratingRadio" type="radio" id="st2" value="2" />
+                      <label for="st2"></label>
+                      <input name="ratingRadio" type="radio" id="st3" value="3" />
+                      <label for="st3"></label>
+                      <input name="ratingRadio" type="radio" id="st4" value="4" />
+                      <label for="st4"></label>
+                      <input name="ratingRadio" type="radio" id="st5" value="5" />
+                      <label for="st5"></label>
+                      </div>
+                  <p class="d-flex mb-0 d-block"><a href="chooseTime.html" class="btn btn-orange py-2 mr-1">Book now</a> <a href="car-single.html"
+                      class="btn btn-gray py-2 ml-1">Details</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="car-wrap rounded ftco-animate">
+                <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-2.jpg);">
+                </div>
+                <div class="text">
+                  <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
+                  <div class="d-flex mb-3">
+                    <span class="cat">Cheverolet</span>
+                    <p class="price ml-auto">$500 <span>/day</span></p>
+                  </div>
+                  <div class="wrapper">
+                    <input name="ratingRadio" type="radio" id="st1" value="1" />
+                    <label for="st1"></label>
+                    <input name="ratingRadio" type="radio" id="st2" value="2" />
+                    <label for="st2"></label>
+                    <input name="ratingRadio" type="radio" id="st3" value="3" />
+                    <label for="st3"></label>
+                    <input name="ratingRadio" type="radio" id="st4" value="4" />
+                    <label for="st4"></label>
+                    <input name="ratingRadio" type="radio" id="st5" value="5" />
+                    <label for="st5"></label>
+                    </div>
+                  <p class="d-flex mb-0 d-block"><a href="chooseTime.html" class="btn btn-orange py-2 mr-1">Book now</a> <a href="car-single.html"
+                      class="btn btn-gray py-2 ml-1">Details</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="car-wrap rounded ftco-animate">
+                <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-3.jpg);">
+                </div>
+                <div class="text">
+                  <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
+                  <div class="d-flex mb-3">
+                    <span class="cat">Cheverolet</span>
+                    <p class="price ml-auto">$500 <span>/day</span></p>
+                  </div>
+                  <div class="wrapper">
+                    <input name="ratingRadio" type="radio" id="st1" value="1" />
+                    <label for="st1"></label>
+                    <input name="ratingRadio" type="radio" id="st2" value="2" />
+                    <label for="st2"></label>
+                    <input name="ratingRadio" type="radio" id="st3" value="3" />
+                    <label for="st3"></label>
+                    <input name="ratingRadio" type="radio" id="st4" value="4" />
+                    <label for="st4"></label>
+                    <input name="ratingRadio" type="radio" id="st5" value="5" />
+                    <label for="st5"></label>
+                    </div>
+                  <p class="d-flex mb-0 d-block"><a href="chooseTime.html" class="btn btn-orange py-2 mr-1">Book now</a> <a href="car-single.html"
+                      class="btn btn-gray py-2 ml-1">Details</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="car-wrap rounded ftco-animate">
+                <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-4.jpg);">
+                </div>
+                <div class="text">
+                  <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
+                  <div class="d-flex mb-3">
+                    <span class="cat">Cheverolet</span>
+                    <p class="price ml-auto">$500 <span>/day</span></p>
+                  </div>
+                  <div class="wrapper">
+                    <input name="ratingRadio" type="radio" id="st1" value="1" />
+                    <label for="st1"></label>
+                    <input name="ratingRadio" type="radio" id="st2" value="2" />
+                    <label for="st2"></label>
+                    <input name="ratingRadio" type="radio" id="st3" value="3" />
+                    <label for="st3"></label>
+                    <input name="ratingRadio" type="radio" id="st4" value="4" />
+                    <label for="st4"></label>
+                    <input name="ratingRadio" type="radio" id="st5" value="5" />
+                    <label for="st5"></label>
+                    </div>
+                  <p class="d-flex mb-0 d-block"><a href="chooseTime.html" class="btn btn-orange py-2 mr-1">Book now</a> <a href="car-single.html"
+                      class="btn btn-gray py-2 ml-1">Details</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+          <p>
+          <h3><b>Car with driver</b></h3>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="carousel-car owl-carousel">
+            <div class="item">
+              <div class="car-wrap rounded ftco-animate">
+                <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-1.jpg);">
+                </div>
+                <div class="text">
+                  <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
+                  <div class="d-flex mb-3">
+                    <span class="cat">Cheverolet</span>
+                    <p class="price ml-auto">$500 <span>/day</span></p>
+                  </div>
+                  <div class="wrapper">
+                    <input name="ratingRadio" type="radio" id="st1" value="1" />
+                    <label for="st1"></label>
+                    <input name="ratingRadio" type="radio" id="st2" value="2" />
+                    <label for="st2"></label>
+                    <input name="ratingRadio" type="radio" id="st3" value="3" />
+                    <label for="st3"></label>
+                    <input name="ratingRadio" type="radio" id="st4" value="4" />
+                    <label for="st4"></label>
+                    <input name="ratingRadio" type="radio" id="st5" value="5" />
+                    <label for="st5"></label>
+                    </div>
+                  <p class="d-flex mb-0 d-block"><a href="chooseTime.html" class="btn btn-orange py-2 mr-1">Book now</a> <a href="car-single.html"
+                      class="btn btn-gray py-2 ml-1">Details</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="car-wrap rounded ftco-animate">
+                <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-2.jpg);">
+                </div>
+                <div class="text">
+                  <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
+                  <div class="d-flex mb-3">
+                    <span class="cat">Cheverolet</span>
+                    <p class="price ml-auto">$500 <span>/day</span></p>
+                  </div>
+                  <div class="wrapper">
+                    <input name="ratingRadio" type="radio" id="st1" value="1" />
+                    <label for="st1"></label>
+                    <input name="ratingRadio" type="radio" id="st2" value="2" />
+                    <label for="st2"></label>
+                    <input name="ratingRadio" type="radio" id="st3" value="3" />
+                    <label for="st3"></label>
+                    <input name="ratingRadio" type="radio" id="st4" value="4" />
+                    <label for="st4"></label>
+                    <input name="ratingRadio" type="radio" id="st5" value="5" />
+                    <label for="st5"></label>
+                    </div>
+                  <p class="d-flex mb-0 d-block"><a href="chooseTime.html" class="btn btn-orange py-2 mr-1">Book now</a> <a href="car-single.html"
+                      class="btn btn-gray py-2 ml-1">Details</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="car-wrap rounded ftco-animate">
+                <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-3.jpg);">
+                </div>
+                <div class="text">
+                  <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
+                  <div class="d-flex mb-3">
+                    <span class="cat">Cheverolet</span>
+                    <p class="price ml-auto">$500 <span>/day</span></p>
+                  </div>
+                  <div class="wrapper">
+                    <input name="ratingRadio" type="radio" id="st1" value="1" />
+                    <label for="st1"></label>
+                    <input name="ratingRadio" type="radio" id="st2" value="2" />
+                    <label for="st2"></label>
+                    <input name="ratingRadio" type="radio" id="st3" value="3" />
+                    <label for="st3"></label>
+                    <input name="ratingRadio" type="radio" id="st4" value="4" />
+                    <label for="st4"></label>
+                    <input name="ratingRadio" type="radio" id="st5" value="5" />
+                    <label for="st5"></label>
+                    </div>
+                  <p class="d-flex mb-0 d-block"><a href="chooseTime.html" class="btn btn-orange py-2 mr-1">Book now</a> <a href="car-single.html"
+                      class="btn btn-gray py-2 ml-1">Details</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="car-wrap rounded ftco-animate">
+                <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-4.jpg);">
+                </div>
+                <div class="text">
+                  <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
+                  <div class="d-flex mb-3">
+                    <span class="cat">Cheverolet</span>
+                    <p class="price ml-auto">$500 <span>/day</span></p>
+                  </div>
+                  <div class="wrapper">
+                    <input name="ratingRadio" type="radio" id="st1" value="1" />
+                    <label for="st1"></label>
+                    <input name="ratingRadio" type="radio" id="st2" value="2" />
+                    <label for="st2"></label>
+                    <input name="ratingRadio" type="radio" id="st3" value="3" />
+                    <label for="st3"></label>
+                    <input name="ratingRadio" type="radio" id="st4" value="4" />
+                    <label for="st4"></label>
+                    <input name="ratingRadio" type="radio" id="st5" value="5" />
+                    <label for="st5"></label>
+                    </div>
+                  <p class="d-flex mb-0 d-block"><a href="chooseTime.html" class="btn btn-orange py-2 mr-1">Book now</a> <a href="car-single.html"
+                      class="btn btn-gray py-2 ml-1">Details</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Book car End -->
+
+
+  <!-- Our last services Start-->
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-7 text-center heading-section ftco-animate">
+          <span class="subheading">Services</span>
+          <h2 class="mb-3">Our Latest Services</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="services services-2 w-100 text-center">
+            <div class="icon d-flex align-items-center justify-content-center"><span
+                class="flaticon-wedding-car"></span></div>
+            <div class="text w-100">
+              <h3 class="heading mb-2">Wedding Ceremony</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="services services-2 w-100 text-center">
+            <div class="icon d-flex align-items-center justify-content-center"><span
+                class="flaticon-transportation"></span></div>
+            <div class="text w-100">
+              <h3 class="heading mb-2">City Transfer</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="services services-2 w-100 text-center">
+            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car"></span></div>
+            <div class="text w-100">
+              <h3 class="heading mb-2">Airport Transfer</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="services services-2 w-100 text-center">
+            <div class="icon d-flex align-items-center justify-content-center"><span
+                class="flaticon-transportation"></span></div>
+            <div class="text w-100">
+              <h3 class="heading mb-2">Whole City Tour</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Our last services End-->
+
+  <!-- Newspaper Start -->
+  <section class="ftco-section ftco-animate" style="background: #FBBB4A;overflow-x: hidden;">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7 text-center heading-section ftco-animate">
+        <h2 class="mb-3" style="color: #BD8522 !important;">Newspapers talk about us</h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row ftco-animate">
+        <div class="col-md-12">
+          <div class="carousel-testimony owl-carousel ftco-owl">
+            <div class="item">
+              <div class="text-center">
+                <div class="text pt-4">
+                  <img src="images/news-1.8f7e6db8.png" class="img-fluid" style="border-radius: 10px;box-shadow: 2px -2px 5px gray;" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="rounded text-center">
+                <div class="text pt-4">
+                  <img src="images/news-2.ad33b3ad.jpg" class="img-fluid" style="border-radius: 10px;box-shadow: 2px -2px 5px gray;" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="rounded text-center">
+                <div class="text pt-4">
+                  <img src="images/news-3.9d9e6a24.png" class="img-fluid" style="border-radius: 10px;box-shadow: 2px -2px 5px gray;" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="rounded text-center">
+                <div class="text pt-4">
+                  <img src="images/news-2.ad33b3ad.jpg" class="img-fluid" style="border-radius: 10px;box-shadow: 2px -2px 5px gray;" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Newspaper End -->
+
+  <!-- Download Start-->
+  <section class="ftco-section banner bg-1" id="home">
+    <div class="overflow"></div>
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-7 text-center heading-section ftco-animate">
+          <span class="subheading">Booking</span>
+          <h3 class="mb-3" style="font-weight: 600;">Download the free CarBook App</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-12 text-center">
+          <!-- Contents -->
+          <div class="content-block">
+            <h5>For faster, easier booking and evclusive deals</h5>
+            <!-- App Badge -->
+            <div class="app-badge">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class=" btn-download">
+                    <!-- <i class="fa fa-android" aria-hidden="true"></i> -->
+                    <img src="images/ch-play.png" class="mr-2" width="31px" height="28px" alt="CH Play">
+                    <div>Get it on the<span>GOOGLE PLAY</span></div>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class=" btn-download"><i class="fa fa-apple" aria-hidden="true"></i>
+                    <div>Available on the<span>Apple store</span></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-4">
+          <div class="image-block">
+            <img class="img-fluid phone-thumb" src="images/iphone-banner.png" alt="iphone-banner">
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- Download End-->
+
+  <!--Partner Start-->
+  <section id="partner" class="ftco-section">
+    <div class="container">
+      <h3>Our Partners/ Our Clients</h3>
+        <section class="customer-logos slider">
+            <div class="slide"><img src="https://images02.nicepage.com/a1389d7bc73adea1e1c1fb7e/f152870f5c9d5ab28268fb89/2.png"></div>
+            <div class="slide"><img src="https://images02.nicepage.com/a1389d7bc73adea1e1c1fb7e/b26eaa96084b5d63a1b8d98d/5.png"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+        </section>
+    <h2>
+    </div>
+  </section>
+  <!--Partner End-->
+
+  <!-- Total Start -->
+  <section class="ftco-counter ftco-section img bg-light" id="section-counter">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 col-sm-6 col-test-6 justify-content-center counter-wrap ftco-animate">
+          <div class="block-18">
+            <div class="text text-border d-flex align-items-center">
+              <strong class="number" data-number="60">0</strong>
+              <span>Year <br>Experienced</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-sm-6 col-test-6 justify-content-center counter-wrap ftco-animate">
+          <div class="block-18">
+            <div class="text text-border d-flex align-items-center">
+              <strong class="number" data-number="1090">0</strong>
+              <span>Total <br>Cars</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-sm-6 col-test-6 justify-content-center counter-wrap ftco-animate">
+          <div class="block-18">
+            <div class="text text-border d-flex align-items-center">
+              <strong class="number" data-number="2590">0</strong>
+              <span>Happy <br>Customers</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 col-sm-6 col-test-6 justify-content-center counter-wrap ftco-animate">
+          <div class="block-18">
+            <div class="text d-flex align-items-center">
+              <strong class="number" data-number="67">0</strong>
+              <span>Total <br>Branches</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Total Start -->
+
+  <!-- Footer Start-->
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2"><a href="#" class="logo">Car<span>book</span></a></h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+              blind texts.</p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4 ml-md-5">
+            <h2 class="ftco-heading-2">Information</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-2 d-block">About</a></li>
+              <li><a href="#" class="py-2 d-block">Services</a></li>
+              <li><a href="#" class="py-2 d-block">Term and Conditions</a></li>
+              <li><a href="#" class="py-2 d-block">Best Price Guarantee</a></li>
+              <li><a href="#" class="py-2 d-block">Privacy &amp; Cookies Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Customer Support</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-2 d-block">FAQ</a></li>
+              <li><a href="#" class="py-2 d-block">Payment Option</a></li>
+              <li><a href="#" class="py-2 d-block">Booking Tips</a></li>
+              <li><a href="#" class="py-2 d-block">How it works</a></li>
+              <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Have a Questions?</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San
+                    Francisco, California, USA</span></li>
+                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                <li><a href="#"><span class="icon icon-envelope"></span><span
+                      class="text">info@yourdomain.com</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
+            <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com"
+              target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Start-->
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+  <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+  <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+    stroke="#F96D00" />
+</svg></div>
+<!-- 
+    <script>
+      let time = setTimeout(function(){
+        document.querySelector('#loader').style.opacity= '0';
+      },1500);
+      let time2 = setTimeout(function(){
+        document.querySelector('#loader').style.zIndex='-1';
+      },5000);
+    </script> -->
+  <script src="js/translate.js"></script>
+  <script type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script src="js/js.js"></script>
+  <script src="js/partner.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <script>
+    $('#time_drop').timepicker();
+</script>
+</body>
+
+</html>

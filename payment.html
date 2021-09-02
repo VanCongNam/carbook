@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Carbook - Free Bootstrap 4 Template by Colorlib</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+    rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- or the reference on CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <!-- themify icon -->
+  <link rel="stylesheet" href="css/css/themify-icons.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/partner.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Car<span>Book</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <!-- <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li> -->
+          <li class="nav-item"><a href="car.html" class="nav-link">Cars</a></li>
+          <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item dropdown">
+            <a class="dropdown-toggle nav-link" href="#" role="button" id="language"> English</a>
+            <div class="dropdown-menu" aria-labelledby="language">
+              <a class="dropdown-item"
+                onclick="doGTranslate('en|en');document.querySelector('#language').textContent='English'" href="#">
+                <span class="flag-icon flag-icon-us"></span> English</a>
+              <a class="dropdown-item"
+                onclick="doGTranslate('en|ja');document.querySelector('#language').textContent='Japan'" href="#"><span
+                  class="flag-icon flag-icon-jp"></span> Japanese</a>
+              <a class="dropdown-item"
+                onclick="doGTranslate('en|vi');document.querySelector('#language').textContent='Việt Nam'"
+                href="#"><span class="flag-icon flag-icon-vn"></span> Vietnamese</a>
+              <a class="dropdown-item"
+                onclick="doGTranslate('en|zh-CN');document.querySelector('#language').textContent='Chinese'"
+                href="#"><span class="flag-icon flag-icon-cn"></span> Chinese</a>
+            </div>
+            <div id="google_translate_element2"></div>
+          </li>
+          <li class="nav-item">
+            <a href="car-single.html" class="nav-link btn btn-outline-white ">Sign In</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+  <!-- Booking Start-->
+  <section id="choose-pay" class="ftco-section bg-light">
+    <div class="container">
+      <div class="row no-gutters mt-5">
+        <div class="col-md-12 payment-car">
+          <div class="row">
+            <!-- <div class="col-md-4 d-flex align-items-start">
+              <form action="#" class="request-form-2 ftco-animate">
+                <h2 class="text-center"><span>22$</span>/day</h2>
+                <div class="form-group">
+                  <label for="" class="label">Pick-up location</label>
+                  <input type="text" class="form-control" placeholder="City, Airport, Station, etc">
+                </div>
+                <div class="form-group">
+                  <label for="" class="label">Drop-off location</label>
+                  <input type="text" class="form-control" placeholder="City, Airport, Station, etc">
+                </div>
+                <div class="d-flex">
+                  <div class="form-group mr-2">
+                    <label for="" class="label">Pick-up date</label>
+                    <input type="text" class="form-control" id="book_pick_date" placeholder="Date">
+                  </div>
+                  <div class="form-group ml-2">
+                    <label for="" class="label">Pick-up time</label>
+                    <input type="text" class="form-control" id="time_pick" placeholder="Time">
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="form-group mr-2">
+                    <label for="" class="label">Drop-off date</label>
+                    <input type="text" class="form-control" id="book_off_date" placeholder="Date">
+                  </div>
+                  <div class="form-group ml-2">
+                    <label for="" class="label">Drop-off time</label>
+                    <input type="text" class="form-control" id="time_drop" placeholder="Time">
+
+                  </div>
+                </div>
+                <div class="form-group detail-price mt-3">
+                  <h3 class="mb-3">Detail price</h3>
+                  <div class="row mb-3">
+                    <div class="col-6">Rental price</div>
+                    <div class="col-6 text-right">50$/day</div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-6">Service charge</div>
+                    <div class="col-6 text-right">5$</div>
+                  </div>
+                  <div class="row mb-3" style="border-bottom: 1px solid #01d28e;">
+                    <div class="col-6">Insurance fees</div>
+                    <div class="col-6 text-right">4.2$</div>
+                  </div>
+                  <div class="row total mb-3">
+                    <div class="col-6">Total</div>
+                    <div class="col-6 text-right">59.2$</div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Rent A Car Now" class="btn btn-secondary py-3 px-4">
+                </div>
+              </form>
+            </div>
+            <div class="col-md-8 d-flex align-items-center">
+                <div class="container-sm">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="car-details ftco-animate">
+                        <div id="detail-main" class="img"
+                          style="background-image: url(images/bg_1.jpg);border: 1px solid gray;"></div>
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="row no-gutters" id="img-detail-item">
+                              <div class="col-4 spacing-item">
+                                <div class="img-item" style="background-image: url(images/bg_1.jpg);"
+                                  onclick="document.querySelector('#detail-main').style.backgroundImage='url(images/bg_1.jpg)';">
+                                </div>
+                              </div>
+                              <div class="col-4 spacing-item">
+                                <div class="img-item" style="background-image: url(images/car-2.jpg);"
+                                  onclick="document.querySelector('#detail-main').style.backgroundImage='url(images/car-2.jpg)';">
+                                </div>
+                              </div>
+                              <div class="col-4 spacing-item">
+                                <div class="img-item" style="background-image: url(images/car-3.jpg);"
+                                  onclick="document.querySelector('#detail-main').style.backgroundImage='url(images/car-3.jpg)';">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <h4><b>HYUNDAI ACCENT 2018</b></h4>
+                            <div class="wrapper">
+                              <input name="ratingRadio" type="radio" id="st1" value="1" />
+                              <label for="st1"></label>
+                              <input name="ratingRadio" type="radio" id="st2" value="2" />
+                              <label for="st2"></label>
+                              <input name="ratingRadio" type="radio" id="st3" value="3" />
+                              <label for="st3"></label>
+                              <input name="ratingRadio" type="radio" id="st4" value="4" />
+                              <label for="st4"></label>
+                              <input name="ratingRadio" type="radio" id="st5" value="5" />
+                              <label for="st5"></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="row mb-4">
+                        <div class="col-4">
+                          <img style="border-radius: 50%;width: 128px;height: 128px;display: block; margin: 0 auto;" src="images/car-1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-8">
+                          <p>Le Van Lam</p>
+                          <div class="wrapper">
+                            <input name="ratingRadio" type="radio" id="st1" value="1" />
+                            <label for="st1"></label>
+                            <input name="ratingRadio" type="radio" id="st2" value="2" />
+                            <label for="st2"></label>
+                            <input name="ratingRadio" type="radio" id="st3" value="3" />
+                            <label for="st3"></label>
+                            <input name="ratingRadio" type="radio" id="st4" value="4" />
+                            <label for="st4"></label>
+                            <input name="ratingRadio" type="radio" id="st5" value="5" />
+                            <label for="st5"></label>
+                          </div>
+                          <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quidem fugiat non commodi
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info-owner">
+                        <p>Giấy tờ: CMND và GPLX (đối chiếu).
+                          Hộ Khẩu hoặc KT3 hoặc Passport (giữ lại)</p>
+                        <p>TÀI SẢN THẾ CHẤP: 15 triệu (tiền mặt/chuyển khoản cho chủ xe khi nhận xe) hoặc Xe máy (kèm cà
+                          vẹt gốc) giá trị 15 triệu</p>
+                        <p>ĐIỀU KHOẢN: <br>
+                          1. Chấp nhận Hộ khẩu Thành phố/KT3 Thành phố/Hộ khẩu tỉnh/Passport (Bản gốc) (Giữ lại khi nhận xe) CMND và GPLX đối chiếu <br>
+                          2. Tài sản đặt cọc (1 trong 2 hình thức)
+                          <br>
+                          - Xe máy (giá trị >15triệu) + Cà vẹt (bản gốc) <br>
+                          - Hoặc cọc tiền mặt 15 triệu.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            <div class="col-md-4 col-sm-12">
+              <div class="info-top">
+                <div class="row">
+                  <div class="col-4 img-car pt-2" style="
+                        padding-right: 10px;">
+                    <img src="images/car-1.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-8">
+                    <h5>Lamborghini Hucaran Evo</h5>
+                    <div class="row no-gutters content-detail">
+                      <div class="col-6">
+                        <p><i class="fa fa-car"></i> Gasoline</p>
+                        <p><i class="fa fa-gas-pump"></i> 8l/100km</p>
+                      </div>
+                      <div class="col-6">
+                        <p><i class="fa fa-cogs"></i> Luggage</p>
+                        <p><i class="fa fa-couch"></i> Seats 7</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row info-owner text-dark">
+                  <div class="col-4">
+                    <p>Car Owner</p>
+                  </div>
+                  <div class="col-8">
+                    <p>nguyen van A</p>
+                  </div>
+                </div>
+                <div class="row text-dark info-owner mt-s-1">
+                  <div class="col-4">
+                    <p>Phone</p>
+                  </div>
+                  <div class="col-8">
+                    <p>012597120</p>
+                  </div>
+                </div>
+                <div class="content-line"></div>
+                <div class="row text-dark">
+                  <div class="col-12 rent-time">
+                    <div class="row">
+                      <div class="col-4 title-pick">
+                        <i class="fas fa-map-marker-alt"></i> Pick-up
+                      </div>
+                      <div class="col-8 location-pick">
+                        <b style="font-size: 16px;">City, Airport, Station, etc</b>
+                        <div class="pre-time">
+                          <div class="rent-day">25-08-2021</div>
+                          <div class="rent-time">09:00 AM</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-4 title-pick">
+                        <i class="fas fa-map-marker-alt"></i> Drop-off
+                      </div>
+                      <div class="col-8 location-pick">
+                        <b style="font-size: 16px;">City, Airport, Station, etc</b>
+                        <div class="pre-time">
+                          <div class="rent-day">25-08-2021</div>
+                          <div class="rent-time">09:00 AM</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="info-bottom mt-3 mb-4">
+                <div class="content">
+                  <h5>Payment Details</h5>
+                  <div class="content-item">
+                    <div>1 day</div>
+                    <div style="text-align: right;">750$</div>
+                  </div>
+                  <div class="content-item">
+                    <div>VAT</div>
+                    <div style="text-align: right;">6750$</div>
+                  </div>
+                </div>
+                <div class="content-total">
+                  <div class="content">
+                    <div class="content-item">
+                      <div>Total</div>
+                      <div style="text-align: right;">8500$</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="contact-payment" class="col-md-8 col-sm-12">
+              <form action="#" class="request-form ftco-animate">
+                <h4 class="border-bt">Contact Information</h4>
+                <div class="form-group">
+                  <label for="" class="label">First name</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="" class="label">Last name</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="" class="label">Phone number</label>
+                  <input type="number" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="" class="label">Email</label>
+                  <input type="email" class="form-control">
+                </div>
+              </form>
+              <div class="row mt-4">
+                <div class="col-12">
+                  <div class="payment-select request-form ftco-animate"
+                    style="border: 1px solid #BD8522; border-radius: 0px !important;">
+                    <h4 class="border-bt">Select your payment method <span style="font-size: 16px;">(Click one option
+                        below)</span></h4>
+                    <div class="row payment-visa mt-4">
+                      <div class="col">
+                        <nav>
+                          <div class="nav nav-pills nav-underline mb-5 animated" data-animation="fadeInUpShorter"
+                            data-animation-delay="0.5s" id="myTab" role="tablist">
+                            <a href="#ico" class="nav-item nav-link active" id="ico-tab" data-toggle="tab" aria-controls="ico"
+                              aria-selected="false" role="tab">Credit Card</a>
+                            <a href="#token" class="nav-item nav-link" id="token-tab" data-toggle="tab"
+                              aria-controls="token" aria-selected="false" role="tab">
+                              <img src="images/vn-pay.png" alt="VN Pay" class="img-fluid" width="40px" height="20px">
+                              VNPay</a>
+                            <a href="#client1" class="nav-item nav-link" id="client-tab" data-toggle="tab"
+                              aria-controls="client" aria-selected="false" role="tab">
+                              <img src="images/logo-momo.jpg" alt="Momo" class="img-fluid" width="20px" height="20px">
+                              Momo</a>
+                            <a href="#general" class="nav-item nav-link" id="general-tab" data-toggle="tab"
+                              aria-controls="general" aria-selected="true" role="tab">Bank transfer</a>
+                            <a href="#biswap" class="nav-item nav-link" id="biswap-tab" data-toggle="tab"
+                              aria-controls="biswap" aria-selected="false" role="tab">Crypto</a>
+
+                          </div>
+                        </nav>
+                        <div class="tab-content" id="myTabContent">
+
+                          <div class="tab-pane fade" id="token" role="tabpanel" aria-labelledby="token-tab">
+                            <div id="token-accordion" class="collapse-icon accordion-icon-rotate">
+                              <div class="card">
+                                <div class="vn-pay-item">
+                                  <div class="row">
+                                    <div class="col-md-3 col-sm-4 col-576-3">
+                                      <img src="images/vietcombanklogo.png" class="img-fluid p-2" alt="VietcomBank"
+                                        onclick="this.style.border = '1px solid #000';">
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-576-3">
+                                      <img src="images/ACB-bank.png" class="img-fluid p-2" alt="ACB">
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-576-3">
+                                      <img src="images/vp-bank.png" class="img-fluid p-2" alt="VP Bank">
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-576-3">
+                                      <img src="images/SacombankLogo.png" class="img-fluid p-2" alt="Sacombank">
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-4 col-576-3">
+                                      <img src="images/angibak.png" class="img-fluid p-2" alt="Agribank">
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-576-3">
+                                      <img src="images/abbank.jpg" class="img-fluid p-2" alt="ABBank">
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-576-3">
+                                      <img src="images/techcombank.jpg
+                                                        " class="img-fluid p-2" alt="Techcombank">
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-576-3">
+                                      <img src="images/baovietbank-amp.jpg" class="img-fluid p-2" alt="Bao Viet Bank">
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-576-3">
+                                      <img src="images/SHB-bank.jpg" class="img-fluid p-2" alt="SHB Bank">
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-4 col-576-3">
+                                      <img src="images/HSBC.jpg" class="img-fluid p-2" alt="HSBC Bank">
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-576-3">
+                                      <img src="images/BIDV.jpg" class="img-fluid p-2" alt="BIDV">
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-576-3">
+                                      <img src="images/MB-bank.png" class="img-fluid p-2" alt="MB Bank">
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-576-3">
+                                      <img src="images/lien-viet-bank.png" class="img-fluid p-2"
+                                        alt="Lien Viet Post Bank">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tab-pane fade" id="client1" role="tabpanel" aria-labelledby="client-tab">
+                            <div id="client-accordion" class="collapse-icon accordion-icon-rotate">
+
+                              <div class="card">
+                                <span class="text-dark">You will be redirected to Momo to complete your purchase</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tab-pane fade" id="general" role="tabpanel"
+                            aria-labelledby="general-tab">
+                            <div id="general-accordion" class="collapse-icon accordion-icon-rotate">
+                              <div class="card animated" data-animation="fadeInUpShorter" data-animation-delay="0.1s">
+                                <div class="card bank-transfer">
+                                  <p>Guarantee 100% safety when paying by bank transfer. Please enter your information
+                                    and transfer to the account below. We will contact you as soon as possible to
+                                    confirm and activate your account.</p>
+                                  <p>Account Name: Vietnam Masters Co., Ltd</p>
+                                  <p>Bank: VP Bank Ben Thanh branch</p>
+                                  <p>Account number: 220546039</p>
+                                  <p>Transfer syntax: Name + Email (if any) + Phone number</p>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                          <!--Bitcoin-->
+                          <div class="tab-pane fade" id="biswap" role="tabpanel" aria-labelledby="biswap-tab">
+                            <div id="token-accordion" class="collapse-icon accordion-icon-rotate">
+                              <div class="card">
+                                <form action="#" class="ftco-animate">
+                                  <div class="form-group">
+                                    <input type="search" name="Search" id="" class="form-control"
+                                      placeholder="Enter Token/Coin name">
+                                  </div>
+                                </form>
+                                <div class="row coin text-dark">
+                                  <div class="coin-item col-mx-992 col-sm-6 col-992-6 mt-3" onclick="document.querySelector('.main-crytal').style.display='block'">
+                                    <div class="d-flex">
+                                      <div>
+                                        <img src="images/bitcoin.jpg" 
+                                          class="img-fluid rounded-circle" alt="Bitcoin">
+                                      </div>
+                                      <div class="coin-name">Bitcoin (BTC)</div>
+                                    </div>
+                                  </div>
+                                  <div class="coin-item col-mx-992 col-sm-6 col-992-6 mt-3" onclick="document.querySelector('.main-crytal').style.display='block'">
+                                    <div class="d-flex">
+                                      <div>
+                                        <img src="images/BUSD.png"  
+                                          class="img-fluid rounded-circle" alt="BUSD">
+                                      </div>
+                                      <div class="coin-name">BUSD (Erc20)</div>
+                                    </div>
+                                  </div>
+                                  <div class="coin-item col-mx-992 col-sm-6 col-992-6 mt-3" onclick="document.querySelector('.main-crytal').style.display='block'">
+                                    <div class="d-flex">
+                                      <div>
+                                        <img src="images/dash.jpg"  
+                                          class="img-fluid rounded-circle" alt="DASH">
+                                      </div>
+                                      <div class="coin-name">Dash (Dash)</div>
+                                    </div>
+                                  </div>
+                                  <div class="coin-item col-mx-992 col-sm-6 col-992-6 mt-3" onclick="document.querySelector('.main-crytal').style.display='block'">
+                                    <div class="d-flex">
+                                      <div>
+                                        <img src="images/ethenium.png"  
+                                          class="img-fluid rounded-circle" alt="Ethereum">
+                                      </div>
+                                      <div class="coin-name">Ethereum (ETH)</div>
+                                    </div>
+                                  </div>
+                                  <div class="coin-item col-mx-992 col-sm-6 col-992-6 mt-3" onclick="document.querySelector('.main-crytal').style.display='block'">
+                                    <div class="d-flex">
+                                      <div>
+                                        <img src="images/litecoin.jpg"  
+                                          class="img-fluid rounded-circle" alt="Lite coin">
+                                      </div>
+                                      <div class="coin-name">Litecoin (BTC)</div>
+                                    </div>
+                                  </div>
+                                  <div class="coin-item col-mx-992 col-sm-6 col-992-6 mt-3" onclick="document.querySelector('.main-crytal').style.display='block'">
+                                    <div class="d-flex">
+                                      <div>
+                                        <img src="images/XRP.svg" 
+                                          class="img-fluid rounded-circle" alt="XRP">
+                                      </div>
+                                      <div class="coin-name">XRP (XRP)</div>
+                                    </div>
+                                  </div>
+                                  <div class="coin-item col-mx-992 col-sm-6 col-992-6 mt-3" onclick="document.querySelector('.main-crytal').style.display='block'">
+                                    <div class="d-flex">
+                                      <div>
+                                        <img src="images/TRON.png"  
+                                          class="img-fluid rounded-circle" alt="TRON">
+                                      </div>
+                                      <div class="coin-name">TRON (TRX)</div>
+                                    </div>
+                                  </div>
+                                  <div class="coin-item col-mx-992 col-sm-6 col-992-6 mt-3" onclick="document.querySelector('.main-crytal').style.display='block'">
+                                    <div class="d-flex">
+                                      <div>
+                                        <img src="images/trueUSD.png" 
+                                          class="img-fluid rounded-circle" alt="TRUEUSD">
+                                      </div>
+                                      <div class="coin-name">TrueUSD (TUSD)</div>
+                                    </div>
+                                  </div>
+                                  <div class="coin-item col-mx-992 col-sm-6 col-992-6 mt-3" onclick="document.querySelector('.main-crytal').style.display='block'">
+                                    <div class="d-flex">
+                                      <div>
+                                        <img src="images/USD-coin.png"  
+                                          class="img-fluid rounded-circle" alt="USD coin">
+                                      </div>
+                                      <div class="coin-name">USD Coin (USDC)</div>
+                                    </div>
+                                  </div>
+                                  <div class="coin-item col-mx-992 col-sm-6 col-992-6 mt-3" onclick="document.querySelector('.main-crytal').style.display='block'">
+                                    <div class="d-flex">
+                                      <div>
+                                        <img src="images/stellar.png" 
+                                          class="img-fluid rounded-circle" alt="Stellar">
+                                      </div>
+                                      <div class="coin-name">Stellar (XLM)</div>
+                                    </div>
+                                  </div>
+                                  <div class="coin-item col-mx-992 col-sm-6 col-992-6 mt-3" onclick="document.querySelector('.main-crytal').style.display='block'">
+                                    <div class="d-flex">
+                                      <div>
+                                        <img src="images/DAI.png" 
+                                          class="img-fluid rounded-circle" alt="DAI coin">
+                                      </div>
+                                      <div class="coin-name">DAI (DAI)</div>
+                                    </div>
+                                  </div>
+                                  <div class="coin-item col-mx-992 col-sm-6 col-992-6 mt-3" onclick="document.querySelector('.main-crytal').style.display='block'">
+                                    <div class="d-flex">
+                                      <div>
+                                        <img src="images/cardano.jpg" 
+                                          class="img-fluid rounded-circle" alt="Cardano">
+                                      </div>
+                                      <div class="coin-name">Cardano (ADA)</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade show active" id="ico" role="tabpanel" aria-labelledby="ico-tab">
+                            <div id="ico-accordion" class="collapse-icon accordion-icon-rotate">
+                              <div class="card">
+                                <div class="credit-card-item">
+                                  <img src="images/visa-mastercard.png" alt="Master card" class="img-fluid"
+                                    width="150px" height="35px">
+                                  <p>Important: Please fill out your credit/debit card details below to pay for your
+                                    booking in a simple and secure way.</p>
+                                  <form action="#" class="request-form ftco-animate">
+                                    <div class="form-group">
+                                      <label for="" class="label">Card number</label>
+                                      <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="" class="label">Name of card</label>
+                                      <input type="text" class="form-control">
+                                    </div>
+                                    <div class="d-flex" style="width: 100%;">
+                                      <div class="form-group" style="width: 59%;margin-right: 15px;">
+                                        <label for="" class="label">Expiration</label>
+                                        <input type="text" class="form-control">
+                                      </div>
+                                      <div class="form-group" style="width: 39%;">
+                                        <label for="" class="label">CCV/CVV</label>
+                                        <input type="text" class="form-control">
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-12">
+                  <div class="payment-select request-form ftco-animate"
+                    style="border: 1px solid #BD8522; border-radius: 0px !important;">
+                    <h4 class="border-bt mb-4">Reservation Terms and Booking Conditions</h4>
+                    <div class="text-b5">
+                      By completing this booking, you agree to the Booking Conditions, Terms and Conditions,
+                      and Privacy Policy.
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-12 pay">
+                  <form action="">
+                    <input type="button" class="pay-now" value="Pay Now">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Booking End -->
+
+  <!-- Footer Start-->
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2"><a href="#" class="logo">Car<span>book</span></a></h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+              blind texts.</p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4 ml-md-5">
+            <h2 class="ftco-heading-2">Information</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-2 d-block">About</a></li>
+              <li><a href="#" class="py-2 d-block">Services</a></li>
+              <li><a href="#" class="py-2 d-block">Term and Conditions</a></li>
+              <li><a href="#" class="py-2 d-block">Best Price Guarantee</a></li>
+              <li><a href="#" class="py-2 d-block">Privacy &amp; Cookies Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Customer Support</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-2 d-block">FAQ</a></li>
+              <li><a href="#" class="py-2 d-block">Payment Option</a></li>
+              <li><a href="#" class="py-2 d-block">Booking Tips</a></li>
+              <li><a href="#" class="py-2 d-block">How it works</a></li>
+              <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Have a Questions?</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San
+                    Francisco, California, USA</span></li>
+                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                <li><a href="#"><span class="icon icon-envelope"></span><span
+                      class="text">info@yourdomain.com</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
+            <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com"
+              target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Start-->
+
+<!-- Crytal Start -->
+<div class="main-crytal">
+  <div id="popup" onclick="document.querySelector('.main-crytal').style.display='none'"> 
+  </div>
+  <div class="container-popup">
+      <div class="form-crytal ftco-animate">
+          <form class="request-form">
+              <div class="title-payment border-bt d-flex">
+                  <div class="name"><h4 class="">Payment</h4></div>
+                  <div class="time"><i class="far fa-clock"></i> 00:30:00</div>
+              </div>
+              <p class="text-secondary mt-3">Send the indicated amount to the address below</p>
+              <div class="form-group mt-2">
+                <label for="" class="label text-dark">Address</label>
+                <input type="text" class="form-control text-dark" placeholder="oEHaHZBmukMQsESOqxDtUzebXJDLCYrs" disabled>
+              </div>
+              <div class="content-payment d-flex">
+                  <div class="qr-code">
+                      <img src="images/QR-code.png" class="img-fluid" alt="QR code">
+                  </div>
+                  <div class="amount">
+                      <p>Payment Amount</p>
+                      <div class="d-flex w-100">
+                          <div class="left text-dark">1 day</div>
+                          <div class="right text-dark">$183.05</div>
+                      </div>
+                      <div class="d-flex w-100">
+                          <div class="left text-dark">VAT</div>
+                          <div class="right text-dark">$183.05</div>
+                      </div>
+                      <div class="line"></div>
+                      <div class="d-flex w-100">
+                          <div class="total-left">Total</div>
+                          <div class="total-center">
+                              <i class="fab fa-bitcoin"></i> 
+                          </div>
+                          <div class="total-right">
+                              00339763 ($159.78)
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="form-group payment mt-3">
+                  <input type="button" class="" value="Payment send" onclick="document.querySelector('.main-crytal').style.display='none';document.querySelector('.main-crytal-2').style.display='block';">
+              </div>
+          </form>
+          
+      </div>
+  </div>
+</div>
+<!-- Crytal End -->
+
+<!-- Wallet Start -->
+<div class="main-crytal-2">
+  <div id="popup" onclick="document.querySelector('.main-crytal-2').style.display='none'"> 
+  </div>
+  <div class="container-popup2">
+      <div class="form-crytal ftco-animate">
+          <form id="wallet" action="#" class="request-form">
+              <div class="title-payment border-bt d-flex">
+                  <div class="name"><h4 class="">Payment</h4></div>
+                  <div class="time"><i class="far fa-close"></i> </div>
+              </div>
+              <div class="content-payment mt-4">
+                  <div class="qr-code-2">
+                      <img src="images/QR-code.png" class="img-fluid" alt="QR code">
+                  </div>
+              </div>
+              <p class="mt-4">This payment will expire in 00:34:09 <br>
+                  Send the indicated amount to the address below:</p>
+              <div class="forn-group">
+                  <label class="label text-dark">USDT (Erc20) amout</label>
+                  <input type="text" class="form-control" placeholder="177:73">
+              </div>
+              <div class="forn-group">
+                  <label class="label text-dark">Wallet address</label>
+                  <input type="text" class="form-control" placeholder="oEHaHZBmukMQsESOqxDtUzebXJDLCYrs">
+              </div>
+          </form>
+          
+      </div>
+  </div>
+</div>
+<!-- Wallet End -->
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+    <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+    <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+      stroke="#F96D00" />
+  </svg></div>
+
+  <script src="js/translate.js"></script>
+  <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script src="js/js.js"></script>
+  <script src="js/partner.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <script src="js/chooseBank.js"></script>
+  <script>
+    $('#time_drop').timepicker();
+  </script>
+</body>
+
+</html>
